@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="Mycanvas" height="800" width="400" style="border: 2px solid black;margin-left: 35%;"></canvas>
+    <script>
+        var canvas=document.getElementById("Mycanvas");
+        var c=canvas.getContext("2d");
+        c.font=" 30px verdana";
+        c.fillText("ARMENIA FLAG",100,75);
+        c.moveTo(100,78);
+        c.fillStyle="red";
+        c.fillRect(100,100,200,50);
+        c.fillStyle="blue";
+        c.fillRect(100,150,200,50);
+        c.fillStyle="yellow";
+        c.fillRect(100,200,200,50);
+        c.strokeStyle="Black";
+        c.lineWidth=4;
+        c.moveTo(100,400);
+        c.lineTo(100,100);
+        c.lineTo(100,800);
+        c.stroke();
+
+    </script>
+    
+</body>
+</html>
